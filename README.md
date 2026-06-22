@@ -25,19 +25,20 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+The game's purpose is try to guess the secret number within 8 guesses. Based on each input from the user, the game gives user a hint(lower or higher) to get closer to the real secret number. One bug I found was when the hint should be 'Go Lower' the game would return 'Go Higher' and vice versa. To fix this, I had to fix check_guess method to make sure it was following the right message logic. Another bug I found was that after a user won the game, the new game wouldn't let the user enter new guesses. To fix this part, I had to new game handler to make sure that it stayed in the 'won' state. I used the help of Claude Code for all three of bug fixes. 
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User Enters a guess of 24
+2. Game Returns Message: 'Go HIGHER!'
+3. User Enters a guess of 55
+4. Game Returns Message: 'Go HIGHER!'
+5. User Enters a guess of 98
+6. Game Returns Message: 'Go LOWER!'
+7. User Enters a guess of 95
+8. User Wins Game with correct secret number and a celebratory message pops up
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
