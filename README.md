@@ -25,7 +25,7 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-The game about guessing a random secret number within 8 guesses. Based on each input from the user, the game gives user a hint(lower or higher) to get closer to the real secret number. One bug I found was when the hint should be 'Go Lower' the game would return 'Go Higher' and vice versa. To fix this, I had to fix check_guess method to make sure it was following the right message logic. Another bug I found was that after a user won the game, the new game wouldn't let the user enter new guesses. To fix this part, I had to new game handler to make sure that it stayed in the 'won' state. I used the help of Claude Code for all three of bug fixes. 
+This game is about guessing a random secret number within 8 guesses. Based on each input from the user, the game gives user a hint(lower or higher) to get closer to the real secret number. One bug I found was when the hint should be 'Go Lower' the game would return 'Go Higher' and vice versa. To fix this, I had to fix check_guess method to make sure it was following the right message logic. Another bug I found was that after a user won the game, the new game wouldn't let the user enter new guesses. To fix this part, I had to new game handler to make sure that it stayed in the 'won' state. I used the help of Claude Code for all three of bug fixes. 
 
 ## 📸 Demo Walkthrough
 
